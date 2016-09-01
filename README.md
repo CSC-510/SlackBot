@@ -16,8 +16,11 @@ npm install
 
 1. Update code with slack token. You will need to create your own slack team for and get a bot token for debugging purpose.
 
-Currently, you cannot all use the class slack team because there is a limit in current users:
-> You should only be able to create 16 connections from the same API token. Unfortunately, that's a general limit across all of Slack's RTM APIs.
+   Currently, you cannot all use the class slack team because there is a limit in
+   current users:
+   
+   > You should only be able to create 16 connections from the same API token.  
+     Unfortunately, that's a general limit across all of Slack's RTM APIs.
 
 2. Update code with forecast.io token. Warning you may also want to create your own forecast.io token (first 1000 api calls are free), meaning about 10 calls per student... which will probably run out.
 
