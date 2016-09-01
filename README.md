@@ -8,7 +8,7 @@ We will use [botkit](https://github.com/howdyai/botkit) for helping connect with
 
 Install code.
 
-```
+```bash
 git clone https://github.com/CSC-510/SlackBot
 cd SlackBot
 npm install
