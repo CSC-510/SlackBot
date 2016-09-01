@@ -14,7 +14,7 @@ cd SlackBot
 npm install
 ```
 
-1. Update code with slack token. You will need to create your own slack team for and get a bot token for debugging purpose.
+1. Create a new slack team.
 
    Currently, you cannot all use the class slack team because there is a limit in
    current users:
@@ -22,14 +22,41 @@ npm install
    > You should only be able to create 16 connections from the same API token.  
      Unfortunately, that's a general limit across all of Slack's RTM APIs.
 
-2. Update code with forecast.io token. Warning you may also want to create your own forecast.io token (first 1000 api calls are free), meaning about 10 calls per student... which will probably run out.
+2. Create a bot team member. Click [/services/new/bot](https://my.slack.com/services/new/bot). For more information about bot-users, see [documentation](https://api.slack.com/bot-users).
 
+3. Copy slack bot token.
 
+4. Get forecast.io token. Warning you may also want to create your own forecast.io token (first 1000 api calls are free), meaning about 10 calls per student... which will probably run out.
+
+5. Update your environment variables.
+
+   You do not want to store sensitive information like api tokens in public locations. Instead, you can store these in configuration files or environment variables.
+   
+   In windows, you can run:
+   ```
+   setx FORECASTTOKEN "<forecast.io.token>"
+   setx ALTCODETOKEN "<slack-token>"
+   # You will then need to close the cmd window and reopen.
+   ```
+   In other systems, you can set them in your shell, like in `.bash_profile`:
+   ```
+   # Edit .bash_profile to have:
+   export FORECASTTOKEN="<token>"
+   export ALTCODETOKEN="<slacktoken>"
+   # Then reload
+   $ source ~/.bash_profile
+   ```
+   
 ### Running the bot
 
 Your goal is to be able to run your bot and get the current weather:
 
 ![image](https://cloud.githubusercontent.com/assets/742934/18172392/2e9a333c-7033-11e6-8dcd-81df6031b0ab.png)
+
+* If you can run `node bot.js` and it outputs something and waits, that's good.
+* Check if you have a green light in your slack team. If not, make sure you properly registered bot. 
+* See if you can get to have the bot reply to a message. Make sure bot is invited to that channel.
+* Finally, see if you can change the code to now get weather information:
 
 ```javascript
 // example for calling weather api
