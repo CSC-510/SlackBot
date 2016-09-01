@@ -54,7 +54,7 @@ Your goal is to be able to run your bot and get the current weather:
 ![image](https://cloud.githubusercontent.com/assets/742934/18172392/2e9a333c-7033-11e6-8dcd-81df6031b0ab.png)
 
 * If you can run `node bot.js` and it outputs something and waits, that's good.
-* Check if you have a green light in your slack team. If not, make sure you properly registered bot. 
+* Check if you have a green light in your slack team for your bot. If not, make sure you properly registered bot. 
 * See if you can get to have the bot reply to a message. Make sure bot is invited to that channel.
 * Finally, see if you can change the code to now get weather information:
 
