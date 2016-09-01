@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "botkit": "^0.2.2",
     "forecast.io": "0.0.9",
-    "google-scholar-link": "^1.0.1",
-    "node-wit": "^3.3.2",
     "slackbots": "^0.5.1"
   }
 }
