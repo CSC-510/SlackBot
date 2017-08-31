@@ -35,14 +35,14 @@ npm install
    In windows, you can run:
    ```
    setx FORECASTTOKEN "<forecast.io.token>"
-   setx ALTCODETOKEN "<slack-token>"
+   setx SLACKTOKEN "<slack-token>"
    # You will then need to close the cmd window and reopen.
    ```
    In other systems, you can set them in your shell, like in `.bash_profile`:
    ```
    # Edit .bash_profile to have:
    export FORECASTTOKEN="<token>"
-   export ALTCODETOKEN="<slacktoken>"
+   export SLACKTOKEN="<slacktoken>"
    # Then reload
    $ source ~/.bash_profile
    ```
