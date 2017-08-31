@@ -14,7 +14,7 @@ cd SlackBot
 npm install
 ```
 
-1. Create a new slack team.
+1. Create a new slack team. You may want to use this team for your fellow project teammates.
 
    Currently, you cannot all use the class slack team because there is a limit in
    current users:
@@ -26,7 +26,7 @@ npm install
 
 3. Copy slack bot token.
 
-4. Get forecast.io token. Warning you may also want to create your own forecast.io token (first 1000 api calls are free), meaning about 10 calls per student... which will probably run out.
+4. Get [forecast.io token](https://darksky.net/dev). First 1000 api calls are free.
 
 5. Update your environment variables.
 
@@ -46,7 +46,9 @@ npm install
    # Then reload
    $ source ~/.bash_profile
    ```
-   
+
+   Confirm you have properly set your tokens. Run `node envTest.js`. You should see your tokens properly printed out.
+
 ### Running the bot
 
 Your goal is to be able to run your bot and get the current weather:
@@ -56,7 +58,10 @@ Your goal is to be able to run your bot and get the current weather:
 * If you can run `node bot.js` and it outputs something and waits, that's good.
 * Check if you have a green light in your slack team for your bot. If not, make sure you properly registered bot. 
 * See if you can get to have the bot reply to a message. Make sure bot is invited to that channel.
-* Finally, see if you can change the code to now get weather information:
+
+### Getting weather
+
+Lets' make a call to the weather API. See the code inside weatherTest.js. You can run `node weatherTest.js` and confirm you can properly read the weather information.
 
 ```javascript
 // example for calling weather api
@@ -71,6 +76,27 @@ function getWeather()
       //console.log('data: ' + JSON.stringify(data));
       var w = data.currently.summary + " and feels like " + data.currently.apparentTemperature;
    });
+}
+```
+
+### Understanding Callbacks...
+
+Let's integrate the weather call with our bot reply. But wait. There is a problem. These function calls run asychronously. That means if we did the following, it would not work...
+
+```
+w = getWeather();
+bot.reply(w)
+```
+
+Instead, we need to introduce a callback to the getWeather function, which is telling it what fuction to callback when weather information is ready:
+
+```
+getWeather(callback)
+{
+  onWeather(function(w)
+  {
+    callback(w);
+  });
 }
 ```
 
