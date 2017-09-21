@@ -1,6 +1,8 @@
 # Slack bot
 [![Build Status](https://travis-ci.org/CSC-510/SlackBot.svg?branch=master)](https://travis-ci.org/CSC-510/SlackBot)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CSC-510/SlackBot.svg)](https://greenkeeper.io/)
+
 We will write a simple slack bot that will tell us the current weather.
 
 We will use [botkit](https://github.com/howdyai/botkit) for helping connect with slack, and [forecast.io](https://developer.forecast.io/) for weather info.
