@@ -11,9 +11,11 @@ function getWeather()
 	forecast.get(latitude, longitude, function (err, res, data) 
 	{
       if (err) throw err;
+
       //console.log('res: ' + JSON.stringify(res));
       //console.log('data: ' + JSON.stringify(data));
       var w = data.currently.summary + " and feels like " + data.currently.apparentTemperature;
       console.log(w)
    });
 }
+exports.getWeather = getWeather;
