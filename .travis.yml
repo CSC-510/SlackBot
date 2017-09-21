@@ -1,4 +1,12 @@
 language: node_js
 node_js:
-  - "7"
-  - "node"
+  - '7'
+  - node
+install:
+  - npm install
+
+script:
+  - node weatherTest.js
+env:
+  matrix:
+    secure: us/7RR3G9eHcffcU4B8Ug3uCF6pOIypfd9FcazMuai+UmeTwd81qoFHwBrTOam7N0e7wsm1ZakdG1bwslOhfblceoxVFo12Xc8CepgiG1lSWDDiPJ5gBGv2XJvwPY0Y5U/wnUOIwwqwI6uz2HNMy9IEZFlAihBoTBsJgL1iBQLUGtf7VOvn12m6CgYh+ovFAH7B8u9KRW3Y4AUYEOoRNEokVZzr0kPWflanRxQx9GUHVgz4ccRRH6W6jwxksRX9FzjcuNJt5eiNZQtpBUsC1yWYycdBKERYSMiKDB43dtNEq+GiwiGQMMIRm8HTbSzS9gf8Y1ZHv7tEkZYOogGByV2tqbtR+JWUxEPjx8xyy3RCvorGfxrBhqOACnN2f+gEfgzMk409w11PGGbuqJ/xhUmA0EGyZZ2gQNUmIEvjaO7q7FNAOq9NkaMcC6VvGQCZ2vnr5sK0R3RFs3/J1X2VMnGSrlips3MDsJ68MKxhSwzXuxeUAISVxAafvYAN7reuWzg1EybCD2PpkySkl9ic0Q4GO5OZ1d0vZEPbKKq0m11b3dPx/8uwOc/jQf5WmVkChMi323C7iQjQ6A7HlBcUp5eIzcL0tCUzPv6UlrejaPoRrgUE2FBpnNA92vx48P2Agg+ppzVvb06iEOvXulcC+d8OUucJ5rezLQGrO79i9I+g=
