@@ -1,4 +1,5 @@
 # Slack bot
+[![Build Status](https://travis-ci.org/CSC-510/SlackBot.svg?branch=master)](https://travis-ci.org/CSC-510/SlackBot)
 
 We will write a simple slack bot that will tell us the current weather.
 
