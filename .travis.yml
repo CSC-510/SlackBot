@@ -1,4 +1,7 @@
 language: node_js
 node_js:
-  - "7"
-  - "node"
+- '7'
+- node
+env:
+  matrix:
+    secure: dNjqrMecVZ6vaVcpPNf+Ag7rVokRl3gqX1iuvqaM5d1/Sx/7bLO7FlsWVB/7A/iZVG4F4IJ2yqlSeOaYV0vYJxI1HBQT5wqT63SvSfMy3OPGj/rQ8KHu6huBWhtWUB1FB2FOdYT3k3+k3Ito9EWy6e8qzyaJ8k/AQc+rNCfijmsCdm9u+H+aNYCh5qgzTVQVunrNvXpqtSEYjfxVTTVrJca08qhbx72LWFgOGIgMGgK5gMALv1ct7/Z8tMCxfS0XxEVh/pTDos6xY+ssof8Q0Km1Tv7q0GAyc6JMa1pNrY9gkUftJmfy8synih92XV+KSxtGaMcpZsCteOB/AcDTYLtYSZv4ydvHpR4EiI+OMh1X3tdDLDjrwu5UJffJbTsvaszPe+6+jE5ImuPTfQ1T47+CV0gR4U51ut3+1SLR5xa89pWHeI4y8KcLarioAplK9g5aLvRNn50pJ7BKOza/XlfmnfGETrJIrkmqkjb9ZLLUSPQzFAhq6YmnxpK3ZxwXGh8qTU7PlsaiE0thrWx1y3gMQIN/6GrsTlV3Fah+C+xiN/zqMA8NmFAUIR21ZQlFVX5fvfAa35UxSQdn5x3h1xI2FQ03ReN9vS5GyV/4x13tSLwMD/L77IbhhLEPuNFd1EDl5vOmlwBG7qLY9vbJ4WGAoPovU4RLF18UdK1L1Ik=
