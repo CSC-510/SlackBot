@@ -7,7 +7,10 @@ describe("Sanity check", function() {
     it("can call weather api", function() {
     	try{
     	 	var main = require("../weatherTest");
-    	 	main.getWeather();
+				main.getWeather(function(w)
+				{
+					
+				});
     	 }catch(error){
     	 	expect(error.message).to.equal('');
     	}
