@@ -1,6 +1,8 @@
 # Slack bot
 [![Build Status](https://travis-ci.org/CSC-510/SlackBot.svg?branch=master)](https://travis-ci.org/CSC-510/SlackBot)
 [![Greenkeeper badge](https://badges.greenkeeper.io/CSC-510/SlackBot.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/CSC-510/SlackBot/status.svg)](https://david-dm.org/CSC-510/SlackBot)
+[![devDependencies Status](https://david-dm.org/CSC-510/SlackBot/dev-status.svg)](https://david-dm.org/CSC-510/SlackBot?type=dev)
 
 We will write a simple slack bot that will tell us the current weather.
 
